@@ -27,7 +27,7 @@ def selection_sort(integer_list):
 class TestSelectionSort(unittest.TestCase):
     """Unit tests for selection sort function"""
 
-    def test_bubble_sort(self):
+    def test_insertion_sort(self):
         """Selection Sort tests"""
         self.assertEqual(
             selection_sort([5, 4, 3, 2, 1]),
