@@ -3,6 +3,9 @@ class Vertex:
         self.id = key
         self.connectedTo = {}
 
+    def __str__(self):
+        return str(self.id) + ' connectedTo: ' + str([x.id for x in self.connectedTo])
+
     def addNeighbor(self, nbr, weight=1):
         self.connectedTo[nbr] = weight
 
